@@ -1,0 +1,217 @@
+@charset "utf-8";
+input {
+    outline: 0
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    outline: 0
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+.page-top {
+    width: 100%;
+    height: 40px;
+    background-color: #db4c3f
+}
+
+.page-content {
+    width: 50%;
+    margin: 0 auto
+}
+
+.page-content h2 {
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff
+}
+
+.main {
+    width: 50%;
+    margin: 0 auto;
+    box-sizing: border-box
+}
+
+.task-input {
+    width: 99%;
+    height: 30px;
+    outline: 0;
+    border: 1px solid #ccc
+}
+
+.task-count {
+    display: flex;
+    margin: 10px 0
+}
+
+.task-count li {
+    padding-left: 10px;
+    flex: 1;
+    color: #dd4b39
+}
+
+.task-count li:nth-child(1) {
+    padding: 5px 0 0 10px
+}
+
+.action {
+    text-align: center;
+    display: flex
+}
+
+.action a {
+    margin: 0 10px;
+    flex: 1;
+    padding: 5px 0;
+    color: #777
+}
+
+.action a:nth-child(3) {
+    margin-right: 0
+}
+
+.active {
+    border: 1px solid rgba(175, 47, 47, 0.2)
+}
+
+.tasks {
+    background-color: #fff
+}
+
+.no-task-tip {
+    padding: 10px 0 10px 10px;
+    display: block;
+    border-bottom: 1px solid #ededed;
+    color: #777
+}
+
+.big-title {
+    color: #222
+}
+
+.todo-list {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.todo-list li {
+    position: relative;
+    font-size: 16px;
+    border-bottom: 1px solid #ededed
+}
+
+.todo-list li:hover {
+    background-color: #fafafa
+}
+
+.todo-list li.editing {
+    border-bottom: 0;
+    padding: 0
+}
+
+.todo-list li.editing .edit {
+    display: block;
+    width: 506px;
+    padding: 13px 17px 12px 17px;
+    margin: 0 0 0 43px
+}
+
+.todo-list li.editing .view {
+    display: none
+}
+
+.todo-list li .toggle {
+    text-align: center;
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    margin: auto 0;
+    border: 0;
+    -webkit-appearance: none;
+    appearance: none
+}
+
+.toggle {
+    text-align: center;
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    margin: auto 0;
+    border: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;%20charset=utf8,%3Csvg%20t=%221610180671976%22%20class=%22icon%22%20viewBox=%220%200%201024%201024%22%20version=%221.1%22%20xmlns=%22http://www.w3.org/2000/svg%22%20p-id=%2210102%22%20width=%2232%22%20height=%2232%22%3E%3Cpath%20d=%22M512%201000.727273C242.082909%201000.727273%2023.272727%20781.917091%2023.272727%20512S242.082909%2023.272727%20512%2023.272727%201000.727273%20242.082909%201000.727273%20512%20781.917091%201000.727273%20512%201000.727273z%20m0-46.545455a442.181818%20442.181818%200%201%200%200-884.363636%20442.181818%20442.181818%200%200%200%200%20884.363636z%22%20fill=%22#515151%22%20p-id=%2210103%22%3E%3C/path%3E%3C/svg%3E')
+
+}
+
+.toggle:checked{
+    background-image: url('data:image/svg+xml;%20charset=utf8,%3Csvg%20t=%221610180533578%22%20class=%22icon%22%20viewBox=%220%200%201024%201024%22%20version=%221.1%22%20xmlns=%22http://www.w3.org/2000/svg%22%20p-id=%229548%22%20width=%2232%22%20height=%2232%22%3E%3Cpath%20d=%22M490.666667%2042.666667C219.690667%2042.666667%200%20262.357333%200%20533.333333%200%20804.309333%20219.690667%201024%20490.666667%201024S981.333333%20804.309333%20981.333333%20533.333333C981.333333%20262.357333%20761.642667%2042.666667%20490.666667%2042.666667zM760.106667%20319.317333l-254.378667%20440.618667c-0.426667%200.896-0.426667%201.877333-0.938667%202.773333-8.874667%2015.317333-25.813333%2023.082667-42.325333%2020.992-5.674667-0.64-11.349333-2.304-16.597333-5.376-1.749333-0.981333-2.773333-2.602667-4.309333-3.797333l-162.602667-124.202667c-20.394667-11.776-27.392-37.888-15.616-58.282667%2011.776-20.394667%2037.888-27.392%2058.282667-15.616l132.949333%20101.546667%20231.722667-401.322667c11.776-20.394667%2037.888-27.392%2058.282667-15.616C764.885333%20272.810667%20771.882667%20298.88%20760.106667%20319.317333z%22%20p-id=%229549%22%20fill=%22#17a2b8%22%3E%3C/path%3E%3C/svg%3E')
+}
+
+.todo-list li label {
+    white-space: pre-line;
+    word-break: break-all;
+    padding: 15px 60px 15px 15px;
+    margin-left: 45px;
+    display: block;
+    line-height: 1.2;
+    transition: color .4s
+}
+
+.todo-list li.completed label {
+    color: #d9d9d9;
+    text-decoration: line-through
+}
+
+.todo-list li .destroy {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    font-size: 30px;
+    color: #cc9a9a;
+    margin-bottom: 11px;
+    transition: color .2s ease-out
+}
+
+.todo-list li .destroy:hover {
+    color: #af5b5e
+}
+
+.todo-list li .destroy:after {
+    content: '×'
+}
+
+.todo-list li:hover .destroy {
+    display: block
+}
+
+.todo-list li .edit {
+    display: none
+}
+
+.todo-list li.editing:last-child {
+    margin-bottom: -1px
+}
